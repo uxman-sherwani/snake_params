@@ -1,3 +1,3 @@
 module SnakyParams
-  VERSION = "2.0.0"
+  VERSION = "2.2.0"
 end

@@ -7,9 +7,9 @@ module SnakyParams
     def call(env)
       # Transforming request
       request = Rack::Request.new(env)
-
-      request.GET.deep_transform_keys!{ |k| k.is_a?(String) ? k.underscore : k }
-      request.POST.deep_transform_keys!{ |k| k.is_a?(String) ? k.underscore : k }
+      
+      request.GET.deep_transform_keys!(&:underscore)
+      request.POST.deep_transform_keys!(&:underscore)
 
       @app.call(env)
     end
