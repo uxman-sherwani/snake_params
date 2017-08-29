@@ -10,6 +10,8 @@ module SnakyParams
 
       request.GET.deep_transform_keys!{ |k| k.is_a?(String) ? k.underscore : k }
       request.POST.deep_transform_keys!{ |k| k.is_a?(String) ? k.underscore : k }
+
+      @app.call(env)
     end
   end
 end
