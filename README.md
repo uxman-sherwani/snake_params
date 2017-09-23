@@ -1,5 +1,7 @@
 # SnakyParams
 
+[![Gem Version](https://badge.fury.io/rb/snaky_params.svg)](https://badge.fury.io/rb/snaky_params)
+
 SnakyParams is Rack middleware for Rails that automatically converts request parameter keys to snake_case. 
 
 This is useful if you Rails app is being used as an API for a front-end application written in any other language (e.g. JavaScript). In Ruby and Rails, the widely adopted naming convention is to use `snake_case` for variables, keys etc. Popular JavaScript style guides (such as the [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)) tend to recommend camelCase. This gem allows you to use snake_case in all Ruby/Rails code without having to worry about converting the case of parameter names or having non-conventional names.
