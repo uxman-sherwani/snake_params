@@ -5,11 +5,10 @@ module SnakyParams
     end
 
     def call(env)
-      # Transforming request
-      request = Rack::Request.new(env)
+      request = ActionDispatch::Request.new(env)
       
-      request.GET.deep_transform_keys!(&:underscore)
-      request.POST.deep_transform_keys!(&:underscore)
+      request.request_parameters.deep_transform_keys!(&:underscore)
+      request.query_parameters.deep_transform_keys!(&:underscore)
 
       @app.call(env)
     end
