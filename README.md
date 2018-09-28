@@ -33,7 +33,7 @@ Example:
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/uxman-sherwani/snake_params.
+Bug reports and pull requests are welcome on GitHub at https://github.com/uxman-sherwani/snaky_params.
 
 ## License
 
